@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SetSpec, org.scalatest.tools.Framework$$anon$1@28b4c43d, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSetSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Set[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should have size 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should produce NoSuchElementException when head is invoked[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 423 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SetSpec[0m
