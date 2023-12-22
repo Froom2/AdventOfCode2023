@@ -64,6 +64,38 @@ class Day2Spec extends AnyFreeSpec {
       getDay2Answer(trimmedList, bagCubes) must be(2076)
 
     }
+
+    "Part 2 should" - {
+      "get the min number of cubes needed for all the games to be possible" in {
+        val testData = List(
+          "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green",
+          "Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue",
+          "Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red",
+          "Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red",
+          "Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"
+        )
+
+        Day2Pt2.gameMins(testData) must be(
+          List(
+            CubeSet(6,4,2),
+            CubeSet(4,1,3),
+            CubeSet(6,20,13),
+            CubeSet(15,14,3),
+            CubeSet(2,6,3)
+          )
+        )
+      }
+      "get the powers of each cubeset" in {
+        val testData = List(
+          CubeSet(6, 4, 2),
+          CubeSet(4, 1, 3),
+          CubeSet(6, 20, 13),
+          CubeSet(15, 14, 3),
+          CubeSet(2, 6, 3)
+        )
+        Day2Pt2.getPowers(testData) must be(List(48,12, 1560, 630, 36))
+      }
+    }
   }
 
 }
